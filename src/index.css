@@ -1,0 +1,6 @@
+/* eslint-disable @tailwindcss/no-custom-classname */
+/* stylelint-disable at-rule-no-unknown */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
