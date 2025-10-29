@@ -1,6 +1,10 @@
 <script setup>
+import Welcome from './components/pages/Welcome.vue';
+import Layout from './components/layout/Layout.vue';
 </script>
 
 <template>
-  <h1 class="text-gray-500 text-3xl font-bold">Eu sabo</h1>
+  <Layout>
+    <Welcome />
+  </Layout>
 </template>
