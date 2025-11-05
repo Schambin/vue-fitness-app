@@ -439,14 +439,14 @@ export const exerciseDescriptions = {
 }
 
 export const gymHealthFacts = [
-    "Getting 7–9 hours of sleep supports muscle recovery and hormone balance.",
-    "Eating enough protein (1.6–2.2g per kg body weight) helps with muscle repair and growth.",
-    "Staying hydrated improves workout performance and aids nutrient delivery.",
-    "Moderate caffeine use can boost focus, strength, and endurance during workouts.",
-    "Healthy fats support hormone production and long-term energy levels.",
-    "Fiber-rich foods support digestion and help maintain a lean physique.",
-    "Daily walking improves cardiovascular health and aids recovery on rest days.",
-    "Meditation or breathwork can reduce stress and improve recovery and focus.",
-    "A proper warm-up increases blood flow and reduces injury risk.",
-    "Skipping rest days can lead to overtraining, fatigue, and stalled progress."
-]
+    "Dormir de 7 a 9 horas por noite ajuda na recuperação muscular e no equilíbrio hormonal.",
+    "Consumir proteína suficiente (1,6–2,2 g por kg de peso corporal) auxilia na reparação e no crescimento muscular.",
+    "Manter-se hidratado melhora o desempenho nos treinos e ajuda na entrega de nutrientes.",
+    "O uso moderado de cafeína pode aumentar o foco, a força e a resistência durante os treinos.",
+    "Gorduras saudáveis contribuem para a produção hormonal e fornecem energia de longo prazo.",
+    "Alimentos ricos em fibras ajudam na digestão e na manutenção de um físico magro.",
+    "Caminhar diariamente melhora a saúde cardiovascular e acelera a recuperação nos dias de descanso.",
+    "Meditação ou exercícios respiratórios podem reduzir o estresse e melhorar a recuperação e o foco.",
+    "Um aquecimento adequado aumenta o fluxo sanguíneo e reduz o risco de lesões.",
+    "Pular os dias de descanso pode levar ao overtraining, fadiga e à estagnação dos resultados."
+];
