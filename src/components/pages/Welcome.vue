@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <section class="flex flex-col gap-6">
-    <div class="flex flex-col gap-2">
+  <section class="flex flex-col gap-6 sm:gap-8 sm:py-4">
+    <div class="flex flex-col gap-2 sm:gap-2">
         <h2>Complete este programa <br/>se você quiser...</h2>
         <div>
             <p>✅ Seguir um programa simples com resultados verdadeiros.</p>
@@ -25,4 +25,4 @@
         </div>
     </div>
   </section>
-</template>
+</template> 
