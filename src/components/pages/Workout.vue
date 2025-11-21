@@ -33,9 +33,9 @@ const { workout, warmup } = workoutProgram[selectedWorkout];
 
             <!-- workout-grid-row -->
             <div class="grid grid-cols-7 gap-4 col-span-7" v-for="(w, wIdx) in warmup" :key="wIdx">
-                <div>
+                <div class="col-span-3 flex items-center gap-4 group ">
                     <p>{{ w.name }}</p>
-                    <button>
+                    <button class="p-0 border-0 shadow-none opacity-0 group-hover:opacity-100 group-hover:tranform-none hover:shadow-none group-hover:text-color-link">
                         <i class="fa-regular fa-circle-question"></i>
                     </button>
                 </div>
@@ -55,9 +55,9 @@ const { workout, warmup } = workoutProgram[selectedWorkout];
 
             <!-- workout-grid-row -->
             <div class="grid grid-cols-7 gap-4 col-span-7" v-for="(w, wIdx) in workout" :key="wIdx">
-                <div>
+                <div class="col-span-3 flex items-center gap-2">
                     <p>{{ w.name }}</p>
-                    <button>
+                    <button class="p-0 border-0 shadow-none hover:tranform-none hover:shadow-none hover:text-color-link">
                         <i class="fa-regular fa-circle-question"></i>
                     </button>
                 </div>
@@ -67,9 +67,10 @@ const { workout, warmup } = workoutProgram[selectedWorkout];
             </div>
         </div>
 
-        <div class="card flex gap-1">
-            <button>Salvar e Sair <i class="fa-solid fa-save"></i></button>
-            <button>Completar <i class="fa-solid fa-check"></i></button>
+        <!-- workout-buttons -->
+        <div class="card flex items-center justify-between gap-4">
+            <button class="flex-1">Salvar e Sair <i class="fa-solid fa-save pl-2"></i></button>
+            <button class="flex-1">Completar <i class="fa-solid fa-check pl-2"></i></button>
         </div>
     </section>
 </template>
