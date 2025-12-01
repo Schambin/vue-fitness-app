@@ -1,10 +1,14 @@
 <script setup>
+import Portal from "../Portal.vue";
 import { workoutProgram } from "../../utils";
 const selectedWorkout = 4;
 const { workout, warmup } = workoutProgram[selectedWorkout];
 </script>
 
 <template>
+    <Portal>
+        <h4>PUSHUPS</h4>
+    </Portal>
     <!-- workout card -->
     <section class="flex flex-col gap-6">
         <div class="card flex flex-col">
