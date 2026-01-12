@@ -5,12 +5,22 @@ import Dashboard from "./components/pages/Dashboard.vue";
 import Workout from "./components/pages/Workout.vue";
 
 import { workoutProgram } from './utils'
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
 const defaultData = {};
-const selectedWorkout = ref(-1);
-const data = ref(defaultData);
 const selectedDisplay = ref(1);
+const data = ref(defaultData);
+const selectedWorkout = ref(-1);
+
+const isWorkoutComplete = computed(() => {
+    const currWorkout = data.value?.[selectedWorkout.value]
+    if(!currWorkout) return false;
+
+    const isCompleteCheck = Object.values(currWorkout).every(ex => !!ex);
+    return isCompleteCheck;
+});
+
+
 
 for(let workoutIdx in workoutProgram) {
     const workoutData = workoutProgram[workoutIdx];
@@ -25,9 +35,9 @@ function handleChangeDisplay(idx) {
     selectedDisplay.value = idx;
 }
 
-function handleSelectWorkout(idx) {
+function handleSelectedWorkout(idx) {
     selectedDisplay.value = 3;
-    selectedDisplay.value = idx;
+    selectedWorkout.value = idx;
 }
 
 function handleSaveWorkout() {
@@ -37,13 +47,12 @@ function handleSaveWorkout() {
 }
 </script>
 
-
 <template>
     <Layout>
         <!-- PAGE 1 -->
         <Welcome :handleChangeDisplay="handleChangeDisplay" v-if="selectedDisplay == 1" />
         <!-- PAGE 2 -->
-        <Dashboard :handleSelectWorkout="handleSelectWorkout" v-if="selectedDisplay == 2" />
+        <Dashboard :handleSelectedWorkout="handleSelectedWorkout" v-if="selectedDisplay == 2" />
         <!-- PAGE 3 -->
         <Workout :data="data" :selectedWorkout="selectedWorkout" v-if="workoutProgram?.[selectedWorkout]" />
     </Layout>
