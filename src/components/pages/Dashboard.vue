@@ -2,6 +2,10 @@
 import Grid from "../Grid.vue";
 import { gymHealthFacts } from "../../utils";
 
+const props = defineProps({
+    handleSelectedWorkout: props
+});
+
 const randomNumber = Math.floor(Math.random() * gymHealthFacts.length);
 const todaysFact = gymHealthFacts[randomNumber];
 </script>
