@@ -6,7 +6,7 @@
 
 <template>
     <section class="flex flex-col gap-6 sm:gap-8 sm:py-4">
-        <div class="flex flex-col gap-2 sm:gap-2">
+        <div class="flex flex-col gap-2 sm:gap-6">
             <h2><strong>Complete this program <br />if you want...</strong></h2>
             <div>
                 <p>✅ Follow a simple program with proven results.</p>

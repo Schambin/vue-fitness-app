@@ -1,10 +1,14 @@
 <script setup>
-
+    defineProps({
+        handleChangeDisplay: Function,
+    });
 </script>
 
 <template>
-    <header class="p-4 w-100 max-w-[600px] mx-auto font-bold cursor-not-allowed">
-        <h1 class="text-gradient">SMOLGRAM</h1>
+    <header class="p-4 w-100 max-w-[600px] mx-auto font-bold">
+        <h1 class="text-gradient">
+            <button @click="handleChangeDisplay(1)" class="btn-reset">SMOLGRAM</button>
+        </h1>
     </header>
     <main class="p-4 w-100 max-w-[600px] mx-auto flex-1">
         <slot />
