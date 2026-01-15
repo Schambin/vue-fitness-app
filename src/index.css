@@ -339,6 +339,32 @@
         @apply border-[1.5px] border-border-secondary cursor-default opacity-55;
     }
 
+    .btn-reset {
+        all: unset;
+        display: inline-block;
+        cursor: pointer;
+        box-sizing: border-box;
+
+        padding: 0 !important;
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        width: auto !important;
+        
+        transition: none !important;
+        transform: none !important;
+    }
+
+    .btn-reset:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-reset:disabled {
+        opacity: 1 !important;
+        border: none !important;
+    }
+
     label {
         @apply block max-w-fit font-medium;
     }
