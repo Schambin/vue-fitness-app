@@ -16,7 +16,7 @@ const todaysFact = gymHealthFacts[randomNumber];
     <section class="flex flex-col gap-8">
         <!-- card tip container -->
         <div class="card flex flex-col gap-2">
-            <h2>Welcome Soldier</h2>
+            <h2>Welcome King</h2>
             <div>
                 <!-- tip -->
                 <p class="flex flex-col">
